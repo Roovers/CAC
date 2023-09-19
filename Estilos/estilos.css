@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Oswald', sans-serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/fondo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo.jpg);
   background-repeat: no-repeat;
   background-position: left top;
   background-attachment: fixed;
@@ -117,7 +117,7 @@ a.nav-link:hover{
 .tech-slideshow > div {
   height: 300px;
   width: 7400px;
-  background: url(./img/banner-jugadores.png);
+  background: url(../img/banner-jugadores.png);
   position: absolute;
   top: 0;
   left: 0;
