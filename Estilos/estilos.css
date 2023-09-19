@@ -1,0 +1,160 @@
+
+/*--- BODY ---*/
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body::-webkit-scrollbar {
+  width: 12px;               
+}
+body::-webkit-scrollbar-track {
+  background: #ecbe00;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #333398;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #ecbe00;  /* creates padding around scroll thumb */
+}
+
+/*--- HEADER ---*/
+
+.navbar{
+  background-image: linear-gradient(
+    112.1deg,
+    rgb(0, 0, 0) 11.4%,
+    rgb(0, 2, 95) 75.2%
+  );
+  color: rgb(255, 255, 255);
+}
+
+a.nav-link{
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(255, 255, 255);
+  display: block;
+  letter-spacing: 5px;
+  font-size: 1em;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+a.nav-link::after{
+  content: "";
+  position: absolute;
+  background:linear-gradient(to bottom, rgb(251, 255, 0), rgb(17, 0, 255));
+  height: 3px;
+  width: 0;
+  left:0;
+  bottom: -10px;
+  transition: 1s;
+}
+
+a.nav-link:hover:after{
+  width:100%;
+}
+a.nav-link:hover{
+  text-shadow: 2px 2px rgba(255, 222, 73, 0.459), 4px 4px rgba(0, 2, 99, 0.651);
+  transform: scale(1.1, 1.1);
+  z-index: 7;
+}
+
+/*--- CARRUSEL---*/
+
+.carousel-item {
+  opacity: 90%;
+}
+
+.carousel-caption {
+  background-color: rgba(12, 0, 116, 0.486);
+  color: white;
+}
+
+.carousel-item p{
+  font-family: 'Quicksand', sans-serif;
+ color: white;
+  display: block;
+  letter-spacing: 5px;
+  font-size: 1em;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.carousel-item h5{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 5px;
+  font-size: 2em;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+/*--- SPONSORS---*/
+
+.sponsors {
+  width: 100.6%;
+  background-color: rgba(255, 255, 255, 0.124);
+}
+
+/*--- EQUIPO---*/
+
+.tech-slideshow {
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 300px;
+  width: 7400px;
+  background: url(../img/banner-jugadores.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 30s linear infinite;
+}
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
+/*--- FOOTER ---*/
+
+.footer{
+  background-image: linear-gradient(
+      117.1deg,
+      rgba(0, 2, 95, 0.479) 11.4%,
+      rgba(0, 0, 0, 0.473) 75.2%
+    );
+    text-align: center;
+    margin-bottom: 0;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(255, 255, 255);
+  display: block;
+  letter-spacing: 5px;
+  font-size: 1em;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+
+.copyright{
+  font-size: 10px
+}
