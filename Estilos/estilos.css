@@ -8,6 +8,7 @@ body {
   background-position: left top;
   background-attachment: fixed;
   background-size: cover;
+
 }
 body::-webkit-scrollbar {
   width: 12px;               
@@ -158,3 +159,219 @@ a.nav-link:hover{
 .copyright{
   font-size: 10px
 }
+
+.card {
+  color: #ecbe00;
+  background-color: #252692c9; /* Color de fondo naranja como ejemplo */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.623)); /* Cambia los valores de color y opacidad aquí */
+  z-index: -1;
+  transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transform: scaleX(0);
+  transform-origin: right;
+  opacity: 0.7;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+
+
+/* Estilos para los botones */
+.gradient-border-hover {
+  background-color:rgba(0, 0, 0, 0.336);
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.gradient-border-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(80deg, transparent, #ffd9007c);
+  transition: width 4.0s ease; /* Transición suave para el borde */
+}
+
+.gradient-border-hover:hover::before {
+  width: 100%;
+}
+
+
+/* Estilo para centrar el div con la clase "tablas" */
+.tablas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/ccancha2.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centra el texto en las tablas */
+  color: #ffffff; /* Texto en color claro */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para las tablas */
+.tablas table {
+  cursor: pointer;
+  border-collapse: collapse; /* Borde colapsado para las tablas */
+  text-align: left; /* Alinea el texto a la izquierda en las tablas */
+  background-color: #333; /* Color de fondo de las tablas (oscuro) */
+  border-radius: 5px; /* Bordes redondeados para las tablas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden; /* Evita que los bordes redondeados se vean cortados */
+}
+
+.text-white {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1em;
+  font-size: 25px;
+}
+
+/* Estilo para las celdas de cabecera */
+.tablas th {
+  color: #ffffff; /* Color del texto en las celdas de cabecera */
+  background-color: #0202025d; /* Color de fondo de las celdas de cabecera (semi-transparente) */
+  font-weight: bold; /* Texto en negrita en las celdas de cabecera */
+  border: 1px solid rgb(65, 65, 65); /* Borde para las celdas de cabecera */
+  padding: 8px; /* Espaciado interno en las celdas de cabecera */
+}
+
+/* Estilo para las filas pares */
+.tablas tr:nth-child(even) {
+  background-color: #0202025d; /* Color de fondo para filas pares (semi-transparente) */
+}
+
+/* Estilo para las filas impares */
+.tablas tr:nth-child(odd) {
+  background-color: #333; /* Color de fondo para filas impares (oscuro) */
+}
+
+/* Estilo para las celdas */
+.tablas td {
+  border: 1px solid rgb(65, 65, 65); /* Borde para las celdas */
+  padding: 8px; /* Espaciado interno en las celdas */
+  text-align: center; /* Alinea el texto al centro en las celdas */
+}
+
+/* Estilo para el hover en las filas */
+.tablas table tr:hover {
+  background-color: #99999998; /* Cambia el color de fondo al pasar el mouse (semi-transparente) */
+}
+
+/* Estilo para el hover en las celdas */
+.tablas table tr:hover td {
+  background-color: #000877; /* Color de fondo al pasar el mouse (semi-transparente) */
+  color: #ffc400; /* Color del texto al pasar el mouse (amarillo) */
+}
+
+
+
+/* Estilos para el tablero realista */
+.container-hs {
+
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#headline {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1em;
+  font-size: 25px;
+  color: white
+  text-transform: uppercase;
+  margin: 10px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.countdown {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px;
+  color: #ffbb00;
+  text-shadow: 1px 1px 2px rgba(0, 60, 255, 0.87);
+  background-color: #000a5f67;
+}
+
+.countdown div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown span {
+  padding: 5px 10px;
+}
+
+.team {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team img {
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.team p {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1em;
+  font-size: 25px;
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.vs {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1em;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
