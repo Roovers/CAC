@@ -1,377 +1,1130 @@
 
-/*--- BODY ---*/
+/* Estilos para Escritorio */
+@media (min-width: 1199.98px) {
+  /* Estilos específicos para escritorio */
+  /*--- BODY ---*/
 
-body {
-  font-family: 'Oswald', sans-serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/fondo.jpg');
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-attachment: fixed;
-  background-size: cover;
-
-}
-body::-webkit-scrollbar {
-  width: 12px;               
-}
-body::-webkit-scrollbar-track {
-  background: #ecbe00;        /* color of the tracking area */
-}
-body::-webkit-scrollbar-thumb {
-  background-color: #333398;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #ecbe00;  /* creates padding around scroll thumb */
-}
-
-/*--- HEADER ---*/
-
-.navbar{
-  background-image: linear-gradient(
-    112.1deg,
-    rgb(0, 0, 0) 11.4%,
-    rgb(0, 2, 95) 75.2%
-  );
-  color: rgb(255, 255, 255);
-}
-
-a.nav-link{
-  font-family: 'Quicksand', sans-serif;
-  color: rgb(255, 255, 255);
-  display: block;
-  letter-spacing: 5px;
-  font-size: 1em;
-  padding: 0.5rem 1rem;
-  transition: all 0.4s linear;
-  border-radius: 5px;
-  margin-left: 15px;
-}
-
-a.nav-link::after{
-  content: "";
-  position: absolute;
-  background:linear-gradient(to bottom, rgb(251, 255, 0), rgb(17, 0, 255));
-  height: 3px;
-  width: 0;
-  left:0;
-  bottom: -10px;
-  transition: 1s;
-}
-
-a.nav-link:hover:after{
-  width:100%;
-}
-a.nav-link:hover{
-  text-shadow: 2px 2px rgba(255, 222, 73, 0.459), 4px 4px rgba(0, 2, 99, 0.651);
-  transform: scale(1.1, 1.1);
-  z-index: 7;
-}
-
-/*--- CARRUSEL---*/
-
-.carousel-item {
-  opacity: 90%;
-}
-
-.carousel-caption {
-  background-color: rgba(12, 0, 116, 0.486);
-  color: white;
-}
-
-.carousel-item p{
-  font-family: 'Quicksand', sans-serif;
- color: white;
-  display: block;
-  letter-spacing: 5px;
-  font-size: 1em;
-  padding: 0.5rem 1rem;
-  transition: all 0.4s linear;
-  border-radius: 5px;
-  margin-left: 15px;
-}
-
-.carousel-item h5{
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 5px;
-  font-size: 2em;
-  padding: 0.5rem 1rem;
-  transition: all 0.4s linear;
-  border-radius: 5px;
-  margin-left: 15px;
-}
-
-/*--- SPONSORS---*/
-
-.sponsors {
-  width: 100.6%;
-  background-color: rgba(255, 255, 255, 0.124);
-}
-
-/*--- EQUIPO---*/
-
-.tech-slideshow {
-  height: 300px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-}
-
-.tech-slideshow > div {
-  height: 300px;
-  width: 7400px;
-  background: url(../Img/banner-jugadores.png);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  transform: translate3d(0, 0, 0);
-}
-
-.tech-slideshow .mover-1 {
-  animation: moveSlideshow 30s linear infinite;
-}
-
-@keyframes moveSlideshow {
-  100% { 
-    transform: translateX(-66.6666%);  
+  body {
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
   }
-}
 
-/*--- FOOTER ---*/
+  body::-webkit-scrollbar {
+    width: 12px;               
+  }
 
-.footer{
-  background-image: linear-gradient(
+  body::-webkit-scrollbar-track {
+    background: #ecbe00;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #333398;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #ecbe00;  /* creates padding around scroll thumb */
+  }
+
+  /*--- HEADER ---*/
+
+  .navbar {
+    background-image: linear-gradient(
+      112.1deg,
+      rgb(0, 0, 0) 11.4%,
+      rgb(0, 2, 95) 75.2%
+    );
+    color: rgb(255, 255, 255);
+  }
+
+  a.nav-link {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+
+  a.nav-link::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(251, 255, 0), rgb(17, 0, 255));
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+  }
+
+  a.nav-link:hover:after {
+    width: 100%;
+  }
+
+  a.nav-link:hover {
+    text-shadow: 2px 2px rgba(255, 222, 73, 0.459), 4px 4px rgba(0, 2, 99, 0.651);
+    transform: scale(1.1, 1.1);
+    z-index: 7;
+  }
+
+  /*--- CARRUSEL---*/
+
+  .carousel-item {
+    opacity: 90%;
+  }
+
+  .carousel-caption {
+    background-color: rgba(12, 0, 116, 0.486);
+    color: white;
+  }
+
+  .carousel-item p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+
+  .carousel-item h5 {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 2em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+
+  /*--- SPONSORS---*/
+
+  .sponsors {
+    width: 100.6%;
+    background-color: rgba(255, 255, 255, 0.124);
+  }
+
+  /*--- EQUIPO---*/
+
+  .tech-slideshow {
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .tech-slideshow > div {
+    height: 300px;
+    width: 7400px;
+    background: url(../Img/banner-jugadores.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .tech-slideshow .mover-1 {
+    animation: moveSlideshow 30s linear infinite;
+  }
+
+  @keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-66.6666%);  
+    }
+  }
+
+  /*--- FOOTER ---*/
+
+  .footer {
+    background-image: linear-gradient(
       117.1deg,
       rgba(0, 2, 95, 0.479) 11.4%,
       rgba(0, 0, 0, 0.473) 75.2%
     );
     text-align: center;
     margin-bottom: 0;
-  font-family: 'Ubuntu', sans-serif;
-  color: rgb(255, 255, 255);
-  display: block;
-  letter-spacing: 5px;
-  font-size: 1em;
-  padding: 0.5rem 1rem;
-  transition: all 0.4s linear;
-  border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+
+  .card {
+    color: #ecbe00;
+    background-color: #252692c9; /* Color de fondo naranja como ejemplo */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), box-shadow 0.3s ease, opacity 0.3s ease;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.623)); /* Cambia los valores de color y opacidad aquí */
+    z-index: -1;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transform: scaleX(0);
+    transform-origin: right;
+    opacity: 0.7;
+  }
+
+  .card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+  }
+
+  /* Estilos para los botones */
+  .gradient-border-hover {
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+  }
+
+  .gradient-border-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(80deg, transparent, #ffd9007c);
+    transition: width 4.0s ease; /* Transición suave para el borde */
+  }
+
+  .gradient-border-hover:hover::before {
+    width: 100%;
+  }
+
+  /* Estilo para centrar el div con la clase "tablas" */
+  .tablas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/ccancha2.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto en las tablas */
+    color: #ffffff; /* Texto en color claro */
+    padding: 20px; /* Espaciado interno */
+  }
+
+  /* Estilo para las tablas */
+  .tablas table {
+    cursor: pointer;
+    border-collapse: collapse; /* Borde colapsado para las tablas */
+    text-align: left; /* Alinea el texto a la izquierda en las tablas */
+    background-color: #333; /* Color de fondo de las tablas (oscuro) */
+    border-radius: 5px; /* Bordes redondeados para las tablas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Evita que los bordes redondeados se vean cortados */
+  }
+
+  .text-white {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+  }
+
+  /* Estilo para las celdas de cabecera */
+  .tablas th {
+    color: #ffffff; /* Color del texto en las celdas de cabecera */
+    background-color: #0202025d; /* Color de fondo de las celdas de cabecera (semi-transparente) */
+    font-weight: bold; /* Texto en negrita en las celdas de cabecera */
+    border: 1px solid rgb(65, 65, 65); /* Borde para las celdas de cabecera */
+    padding: 8px; /* Espaciado interno en las celdas de cabecera */
+  }
+
+  /* Estilo para las filas pares */
+  .tablas tr:nth-child(even) {
+    background-color: #0202025d; /* Color de fondo para filas pares (semi-transparente) */
+  }
+
+  /* Estilo para las filas impares */
+  .tablas tr:nth-child(odd) {
+    background-color: #333; /* Color de fondo para filas impares (oscuro) */
+  }
+
+  /* Estilo para las celdas */
+  .tablas td {
+    border: 1px solid rgb(65, 65, 65); /* Borde para las celdas */
+    padding: 8px; /* Espaciado interno en las celdas */
+    text-align: center; /* Alinea el texto al centro en las celdas */
+  }
+
+  /* Estilo para el hover en las filas */
+  .tablas table tr:hover {
+    background-color: #99999998; /* Cambia el color de fondo al pasar el mouse (semi-transparente) */
+  }
+
+  /* Estilo para el hover en las celdas */
+  .tablas table tr:hover td {
+    background-color: #000877; /* Color de fondo al pasar el mouse (semi-transparente) */
+    color: #ffc400; /* Color del texto al pasar el mouse (amarillo) */
+  }
+
+  /* Estilos para el tablero realista */
+  .container-hs {
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  #headline {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .countdown {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    color: #ffbb00;
+    text-shadow: 1px 1px 2px rgba(0, 60, 255, 0.87);
+    background-color: #000a5f67;
+  }
+
+  .countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .countdown span {
+    padding: 5px 10px;
+  }
+
+  .team {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team img {
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+
+  .team p {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+
+  .vs {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-top: 5px;
+  }
 }
 
-.copyright{
-  font-size: 10px
+@media (min-width: 1023px) {
+  
+  body {
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;               
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #ecbe00;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #333398;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #ecbe00;  /* creates padding around scroll thumb */
+  }
+
+  /*--- HEADER ---*/
+
+  .navbar {
+    background-image: linear-gradient(
+      112.1deg,
+      rgb(0, 0, 0) 11.4%,
+      rgb(0, 2, 95) 75.2%
+    );
+    color: rgb(255, 255, 255);
+  }
+
+  a.nav-link {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+
+  a.nav-link::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(251, 255, 0), rgb(17, 0, 255));
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+  }
+
+  a.nav-link:hover:after {
+    width: 100%;
+  }
+
+  a.nav-link:hover {
+    text-shadow: 2px 2px rgba(255, 222, 73, 0.459), 4px 4px rgba(0, 2, 99, 0.651);
+    transform: scale(1.1, 1.1);
+    z-index: 7;
+  }
+
+  /*--- CARRUSEL---*/
+
+  .carousel-item {
+    opacity: 90%;
+  }
+
+  .carousel-caption {
+    background-color: rgba(12, 0, 116, 0.486);
+    color: white;
+  }
+
+  .carousel-item p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+
+  .carousel-item h5 {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 2em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+
+  /*--- SPONSORS---*/
+
+  .sponsors {
+    width: 100.6%;
+    background-color: rgba(255, 255, 255, 0.124);
+  }
+
+  /*--- EQUIPO---*/
+
+  .tech-slideshow {
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .tech-slideshow > div {
+    height: 300px;
+    width: 7400px;
+    background: url(../Img/banner-jugadores.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .tech-slideshow .mover-1 {
+    animation: moveSlideshow 30s linear infinite;
+  }
+
+  @keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-66.6666%);  
+    }
+  }
+
+  /*--- FOOTER ---*/
+
+  .footer {
+    background-image: linear-gradient(
+      117.1deg,
+      rgba(0, 2, 95, 0.479) 11.4%,
+      rgba(0, 0, 0, 0.473) 75.2%
+    );
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+
+  .card {
+    color: #ecbe00;
+    background-color: #252692c9; /* Color de fondo naranja como ejemplo */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), box-shadow 0.3s ease, opacity 0.3s ease;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.623)); /* Cambia los valores de color y opacidad aquí */
+    z-index: -1;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transform: scaleX(0);
+    transform-origin: right;
+    opacity: 0.7;
+  }
+
+  .card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+  }
+
+  /* Estilos para los botones */
+  .gradient-border-hover {
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+  }
+
+  .gradient-border-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(80deg, transparent, #ffd9007c);
+    transition: width 4.0s ease; /* Transición suave para el borde */
+  }
+
+  .gradient-border-hover:hover::before {
+    width: 100%;
+  }
+
+  /* Estilo para centrar el div con la clase "tablas" */
+  .tablas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/ccancha2.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto en las tablas */
+    color: #ffffff; /* Texto en color claro */
+    padding: 20px; /* Espaciado interno */
+  }
+
+  /* Estilo para las tablas */
+  .tablas table {
+    cursor: pointer;
+    border-collapse: collapse; /* Borde colapsado para las tablas */
+    text-align: left; /* Alinea el texto a la izquierda en las tablas */
+    background-color: #333; /* Color de fondo de las tablas (oscuro) */
+    border-radius: 5px; /* Bordes redondeados para las tablas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Evita que los bordes redondeados se vean cortados */
+  }
+
+  .text-white {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+  }
+
+  /* Estilo para las celdas de cabecera */
+  .tablas th {
+    color: #ffffff; /* Color del texto en las celdas de cabecera */
+    background-color: #0202025d; /* Color de fondo de las celdas de cabecera (semi-transparente) */
+    font-weight: bold; /* Texto en negrita en las celdas de cabecera */
+    border: 1px solid rgb(65, 65, 65); /* Borde para las celdas de cabecera */
+    padding: 8px; /* Espaciado interno en las celdas de cabecera */
+  }
+
+  /* Estilo para las filas pares */
+  .tablas tr:nth-child(even) {
+    background-color: #0202025d; /* Color de fondo para filas pares (semi-transparente) */
+  }
+
+  /* Estilo para las filas impares */
+  .tablas tr:nth-child(odd) {
+    background-color: #333; /* Color de fondo para filas impares (oscuro) */
+  }
+
+  /* Estilo para las celdas */
+  .tablas td {
+    border: 1px solid rgb(65, 65, 65); /* Borde para las celdas */
+    padding: 8px; /* Espaciado interno en las celdas */
+    text-align: center; /* Alinea el texto al centro en las celdas */
+  }
+
+  /* Estilo para el hover en las filas */
+  .tablas table tr:hover {
+    background-color: #99999998; /* Cambia el color de fondo al pasar el mouse (semi-transparente) */
+  }
+
+  /* Estilo para el hover en las celdas */
+  .tablas table tr:hover td {
+    background-color: #000877; /* Color de fondo al pasar el mouse (semi-transparente) */
+    color: #ffc400; /* Color del texto al pasar el mouse (amarillo) */
+  }
+
+  /* Estilos para el tablero realista */
+  .container-hs {
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  #headline {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .countdown {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    color: #ffbb00;
+    text-shadow: 1px 1px 2px rgba(0, 60, 255, 0.87);
+    background-color: #000a5f67;
+  }
+
+  .countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .countdown span {
+    padding: 5px 10px;
+  }
+
+  .team {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team img {
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+
+  .team p {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+
+  .vs {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-top: 5px;
+  }
 }
 
-.card {
-  color: #ecbe00;
-  background-color: #252692c9; /* Color de fondo naranja como ejemplo */
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), box-shadow 0.3s ease, opacity 0.3s ease;
+@media (max-width: 575.98px)and (orientation:portrait) {
+  
+  body {
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;               
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #ecbe00;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #333398;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #ecbe00;  /* creates padding around scroll thumb */
+  }
+
+  /*--- HEADER ---*/
+
+  .navbar {
+    background-image: linear-gradient(
+      112.1deg,
+      rgb(0, 0, 0) 11.4%,
+      rgb(0, 2, 95) 75.2%
+    );
+    color: rgb(255, 255, 255);
+  }
+
+  a.nav-link {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+
+  a.nav-link::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(251, 255, 0), rgb(17, 0, 255));
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+  }
+
+  a.nav-link:hover:after {
+    width: 100%;
+  }
+
+  a.nav-link:hover {
+    text-shadow: 2px 2px rgba(255, 222, 73, 0.459), 4px 4px rgba(0, 2, 99, 0.651);
+    transform: scale(1.1, 1.1);
+    z-index: 7;
+  }
+
+  /*--- CARRUSEL---*/
+
+  .carousel-item {
+    opacity: 90%;
+  }
+
+  .carousel-caption {
+    background-color: rgba(12, 0, 116, 0.486);
+    color: white;
+  }
+
+  .carousel-item p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+
+  .carousel-item h5 {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 2em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+
+  /*--- SPONSORS---*/
+
+  .sponsors {
+    width: 100.6%;
+    background-color: rgba(255, 255, 255, 0.124);
+  }
+
+  /*--- EQUIPO---*/
+
+  .tech-slideshow {
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .tech-slideshow > div {
+    height: 300px;
+    width: 7400px;
+    background: url(../Img/banner-jugadores.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .tech-slideshow .mover-1 {
+    animation: moveSlideshow 30s linear infinite;
+  }
+
+  @keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-66.6666%);  
+    }
+  }
+
+  /*--- FOOTER ---*/
+
+  .footer {
+    background-image: linear-gradient(
+      117.1deg,
+      rgba(0, 2, 95, 0.479) 11.4%,
+      rgba(0, 0, 0, 0.473) 75.2%
+    );
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+
+  .card {
+    color: #ecbe00;
+    background-color: #252692c9; /* Color de fondo naranja como ejemplo */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), box-shadow 0.3s ease, opacity 0.3s ease;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.623)); /* Cambia los valores de color y opacidad aquí */
+    z-index: -1;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transform: scaleX(0);
+    transform-origin: right;
+    opacity: 0.7;
+  }
+
+  .card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+  }
+
+  /* Estilos para los botones */
+  .gradient-border-hover {
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+  }
+
+  .gradient-border-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(80deg, transparent, #ffd9007c);
+    transition: width 4.0s ease; /* Transición suave para el borde */
+  }
+
+  .gradient-border-hover:hover::before {
+    width: 100%;
+  }
+
+  /* Estilo para centrar el div con la clase "tablas" */
+  .tablas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/ccancha2.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto en las tablas */
+    color: #ffffff; /* Texto en color claro */
+    padding: 20px; /* Espaciado interno */
+  }
+
+  /* Estilo para las tablas */
+  .tablas table {
+    cursor: pointer;
+    border-collapse: collapse; /* Borde colapsado para las tablas */
+    text-align: left; /* Alinea el texto a la izquierda en las tablas */
+    background-color: #333; /* Color de fondo de las tablas (oscuro) */
+    border-radius: 5px; /* Bordes redondeados para las tablas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Evita que los bordes redondeados se vean cortados */
+  }
+
+  .text-white {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+  }
+
+  /* Estilo para las celdas de cabecera */
+  .tablas th {
+    color: #ffffff; /* Color del texto en las celdas de cabecera */
+    background-color: #0202025d; /* Color de fondo de las celdas de cabecera (semi-transparente) */
+    font-weight: bold; /* Texto en negrita en las celdas de cabecera */
+    border: 1px solid rgb(65, 65, 65); /* Borde para las celdas de cabecera */
+    padding: 8px; /* Espaciado interno en las celdas de cabecera */
+  }
+
+  /* Estilo para las filas pares */
+  .tablas tr:nth-child(even) {
+    background-color: #0202025d; /* Color de fondo para filas pares (semi-transparente) */
+  }
+
+  /* Estilo para las filas impares */
+  .tablas tr:nth-child(odd) {
+    background-color: #333; /* Color de fondo para filas impares (oscuro) */
+  }
+
+  /* Estilo para las celdas */
+  .tablas td {
+    border: 1px solid rgb(65, 65, 65); /* Borde para las celdas */
+    padding: 8px; /* Espaciado interno en las celdas */
+    text-align: center; /* Alinea el texto al centro en las celdas */
+  }
+
+  /* Estilo para el hover en las filas */
+  .tablas table tr:hover {
+    background-color: #99999998; /* Cambia el color de fondo al pasar el mouse (semi-transparente) */
+  }
+
+  /* Estilo para el hover en las celdas */
+  .tablas table tr:hover td {
+    background-color: #000877; /* Color de fondo al pasar el mouse (semi-transparente) */
+    color: #ffc400; /* Color del texto al pasar el mouse (amarillo) */
+  }
+
+  /* Estilos para el tablero realista */
+  .container-hs {
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  #headline {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .countdown {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    color: #ffbb00;
+    text-shadow: 1px 1px 2px rgba(0, 60, 255, 0.87);
+    background-color: #000a5f67;
+  }
+
+  .countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .countdown span {
+    padding: 5px 10px;
+  }
+
+  .team {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team img {
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+
+  .team p {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+
+  .vs {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-top: 5px;
+  }
 }
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.623)); /* Cambia los valores de color y opacidad aquí */
-  z-index: -1;
-  transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-  transform: scaleX(0);
-  transform-origin: right;
-  opacity: 0.7;
-}
-
-.card:hover::before {
-  transform: scaleX(1);
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-  opacity: 0.9;
-}
-
-
-/* Estilos para los botones */
-.gradient-border-hover {
-  background-color:rgba(0, 0, 0, 0.336);
-  border-radius: 5px;
-  font-size: 15px;
-  padding: 10px 20px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: color 0.3s ease; /* Transición suave para el color del texto */
-}
-
-.gradient-border-hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(80deg, transparent, #ffd9007c);
-  transition: width 4.0s ease; /* Transición suave para el borde */
-}
-
-.gradient-border-hover:hover::before {
-  width: 100%;
-}
-
-
-/* Estilo para centrar el div con la clase "tablas" */
-.tablas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/ccancha2.jpg');
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Centra el texto en las tablas */
-  color: #ffffff; /* Texto en color claro */
-  padding: 20px; /* Espaciado interno */
-}
-
-/* Estilo para las tablas */
-.tablas table {
-  cursor: pointer;
-  border-collapse: collapse; /* Borde colapsado para las tablas */
-  text-align: left; /* Alinea el texto a la izquierda en las tablas */
-  background-color: #333; /* Color de fondo de las tablas (oscuro) */
-  border-radius: 5px; /* Bordes redondeados para las tablas */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  overflow: hidden; /* Evita que los bordes redondeados se vean cortados */
-}
-
-.text-white {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 5px;
-  font-size: 1em;
-  font-size: 25px;
-}
-
-/* Estilo para las celdas de cabecera */
-.tablas th {
-  color: #ffffff; /* Color del texto en las celdas de cabecera */
-  background-color: #0202025d; /* Color de fondo de las celdas de cabecera (semi-transparente) */
-  font-weight: bold; /* Texto en negrita en las celdas de cabecera */
-  border: 1px solid rgb(65, 65, 65); /* Borde para las celdas de cabecera */
-  padding: 8px; /* Espaciado interno en las celdas de cabecera */
-}
-
-/* Estilo para las filas pares */
-.tablas tr:nth-child(even) {
-  background-color: #0202025d; /* Color de fondo para filas pares (semi-transparente) */
-}
-
-/* Estilo para las filas impares */
-.tablas tr:nth-child(odd) {
-  background-color: #333; /* Color de fondo para filas impares (oscuro) */
-}
-
-/* Estilo para las celdas */
-.tablas td {
-  border: 1px solid rgb(65, 65, 65); /* Borde para las celdas */
-  padding: 8px; /* Espaciado interno en las celdas */
-  text-align: center; /* Alinea el texto al centro en las celdas */
-}
-
-/* Estilo para el hover en las filas */
-.tablas table tr:hover {
-  background-color: #99999998; /* Cambia el color de fondo al pasar el mouse (semi-transparente) */
-}
-
-/* Estilo para el hover en las celdas */
-.tablas table tr:hover td {
-  background-color: #000877; /* Color de fondo al pasar el mouse (semi-transparente) */
-  color: #ffc400; /* Color del texto al pasar el mouse (amarillo) */
-}
-
-
-
-/* Estilos para el tablero realista */
-.container-hs {
-
-  border-radius: 10px;
-  padding: 50px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-#headline {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 5px;
-  font-size: 1em;
-  font-size: 25px;
-  color: white
-  text-transform: uppercase;
-  margin: 10px 0;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.countdown {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 5px;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 8px;
-  padding: 10px;
-  color: #ffbb00;
-  text-shadow: 1px 1px 2px rgba(0, 60, 255, 0.87);
-  background-color: #000a5f67;
-}
-
-.countdown div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.countdown span {
-  padding: 5px 10px;
-}
-
-.team {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.team img {
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 5px;
-}
-
-.team p {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 5px;
-  font-size: 1em;
-  font-size: 25px;
-  font-size: 18px;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  margin: 0;
-}
-
-.vs {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 5px;
-  font-size: 1em;
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  margin-top: 5px;
-}
-
