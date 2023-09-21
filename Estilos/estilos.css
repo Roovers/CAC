@@ -398,44 +398,51 @@ a.nav-link:hover {
   margin-top: 5px;
 }
 
+@media only screen and (min-width: 767px) and (max-width: 1023px){
 
-@media screen and (max-width: 480px) {
+  .navbar {
+  background-image: linear-gradient(112.1deg, rgb(0, 0, 0) 11.4%, rgb(0, 2, 95) 75.2%);
+  color: rgb(255, 255, 255);
+}
 
-    .navbar {
-    background-image: linear-gradient(112.1deg, rgb(0, 0, 0) 11.4%, rgb(0, 2, 95) 75.2%);
-    color: rgb(255, 255, 255);
+  .sponsors-img{
+    max-width: 100%;
+    height: auto;
+}
+
+  /* Ajusta los estilos para pantallas más pequeñas aquí */
+  .tablas  {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px; /* Reduce el tamaño del texto */
   }
 
-    .sponsors-img{
-    height: 100px;
+  .card {
+    text-align: center;
+    background-color: #22222448;
+    width: 100% !important; /* Agregamos !important */
   }
 
-    /* Ajusta los estilos para pantallas más pequeñas aquí */
-    .tablas  {
-      display: flex;
-      flex-direction: column;
-      font-size: 12px; /* Reduce el tamaño del texto */
-    }
-
-    .card {
-      text-align: center;
-      background-color: #22222448;
-      width: 100% !important; /* Agregamos !important */
-    }
-
-    .card img {
-      height: 1px;
-    }
-    
-    .card-title {
-      font-size: 0px !important; /* Agregamos !important */
-    }
+  .card img {
+    height: 1px;
+  }
   
-    .card-text {
-      font-size: 0px !important; /* Agregamos !important */
-    }
-  
-    .card-button {
-      font-size: 14px !important; /* Agregamos !important */
-    }
+  .card-title {
+    font-size: 0px !important; /* Agregamos !important */
+  }
+
+  .card-text {
+    font-size: 0px !important; /* Agregamos !important */
+  }
+
+  .card-button {
+    font-size: 14px !important; /* Agregamos !important */
+  }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+.tablas {
+  flex-direction: column;
+}
 }
