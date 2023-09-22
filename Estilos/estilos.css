@@ -398,7 +398,7 @@ a.nav-link:hover {
   margin-top: 5px;
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1023px){
+@media only screen and (min-width: 200px) and (max-width: 1023px){
 
   .navbar {
   background-image: linear-gradient(112.1deg, rgb(0, 0, 0) 11.4%, rgb(0, 2, 95) 75.2%);
