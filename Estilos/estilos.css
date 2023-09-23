@@ -98,6 +98,17 @@ a.nav-link:hover {
   box-shadow: 
     0px 4px 20px rgba(255, 255, 255, 0.493), /* Primera sombra exterior */
     0px 4px 20px rgb(255, 196, 87); /* Segunda sombra exterior */
+    
+  /* Agregar z-index para control de apilamiento */
+  z-index: 1;
+}
+
+.card:hover {
+  z-index: 2;
+  transform: translateY(-10px); /* Cambiar la posición vertical cuando se pasa el mouse */
+  box-shadow: 
+    0px 8px 30px rgba(255, 255, 255, 0.493), /* Primera sombra exterior */
+    0px 8px 30px rgb(255, 196, 87); /* Segunda sombra exterior */
 }
 
 .card-img1 {
@@ -495,6 +506,10 @@ a.nav-link:hover {
   .general {
     display: flex;
     flex-direction: column;
+  }
+
+  .slider {
+    width: 100vw;
   }
 
 }
