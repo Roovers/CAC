@@ -7,23 +7,9 @@ body {
   background-position: left top;
   background-attachment: fixed;
   background-size: cover;
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
 }
-
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-  background: #ecbe00;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #333398;
-  border-radius: 20px;
-  border: 3px solid #ecbe00;
-}
-
-/*--- HEADER ---*/
 
 .navbar {
   background-image: linear-gradient(112.1deg, rgb(0, 0, 0) 11.4%, rgb(0, 2, 95) 75.2%);
@@ -61,131 +47,6 @@ a.nav-link:hover {
   text-shadow: 2px 2px rgba(255, 222, 73, 0.459), 4px 4px rgba(0, 2, 99, 0.651);
   transform: scale(1.1, 1.1);
   z-index: 7;
-}
-
-/*--- CARRUSEL---*/
-
-.carousel-item {
-  opacity: 90%;
-}
-
-.carousel-caption {
-  background-color: rgba(12, 0, 116, 0.486);
-  color: white;
-}
-
-.carousel-item p {
-  font-family: 'Quicksand', sans-serif;
-  color: white;
-  display: block;
-  letter-spacing: 5px;
-  font-size: 1em;
-  padding: 0.5rem 1rem;
-  transition: all 0.4s linear;
-  border-radius: 5px;
-  margin-left: 15px;
-}
-
-.carousel-item h5 {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 5px;
-  font-size: 2em;
-  padding: 0.5rem 1rem;
-  transition: all 0.4s linear;
-  border-radius: 5px;
-  margin-left: 15px;
-}
-
-/* --- SPONSORS ---- */
-
-/* Estilos para el contenedor del carrusel de sponsors */
-.sponsors {
-  overflow: hidden;
-  width: 100%;
-}
-
-/* Estilos para el carrusel SPONSORS */
-.sponsors-carousel {
-  display: flex;
-  animation: carousel 200s linear infinite;
-  white-space: nowrap; /* Evita saltos de línea entre imágenes */
-  width: fit-content; /* Ajusta el ancho al contenido */
-}
-
-/* Estilos para las imágenes en el carrusel de sponsors */
-.sponsors-img {
-  height: 300px;
-  width: auto;
-  margin-right: 20px; /* Espacio entre las imágenes */
-}
-
-/* Definir la animación del carrusel de sponsors */
-@keyframes carousel {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-200%); /* Mueve el carrusel completamente hacia la izquierda */
-  }
-}
-
-
-
-
-
-/*--- EQUIPO---*/
-
-/* Estilos para el contenedor del carrusel */
-.jugadores {
-  overflow: hidden;
-  width: 100%;
-}
-
-/* Estilos para el carrusel SPONSORS */
-.jugadores-carousel {
-  display: flex;
-  animation: carousel 250s linear infinite;
-  white-space: nowrap; /* Evita saltos de línea entre imágenes */
-  width: fit-content; /* Ajusta el ancho al contenido */
-
-}
-
-/* Estilos para las imágenes en el carrusel */
-.jugadores-img {
-  height: 300px;
-  width: auto;
-  margin-right: 20px; /* Espacio entre las imágenes */
-}
-
-/* Definir la animación del carrusel */
-@keyframes carousel {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-200%); /* Mueve el carrusel completamente hacia la izquierda */
-  }
-}
-
-
-/*--- FOOTER ---*/
-
-.footer {
-  background-image: linear-gradient(117.1deg, rgba(0, 2, 95, 0.479) 11.4%, rgba(0, 0, 0, 0.473) 75.2%);
-  text-align: center;
-  margin-bottom: 0;
-  font-family: 'Ubuntu', sans-serif;
-  color: rgb(255, 255, 255);
-  display: block;
-  letter-spacing: 5px;
-  font-size: 1em;
-  padding: 0.5rem 1rem;
-  transition: all 0.4s linear;
-  border-radius: 5px;
-}
-
-.copyright {
-  font-size: 10px
 }
 
 .card {
@@ -248,43 +109,152 @@ a.nav-link:hover {
   width: 100%;
 }
 
-/* Estilo para centrar el div con la clase "tablas" */
-.tablas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/ccancha2.jpg');
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  padding: 20px;
+
+.bg-dark {
+  background-image: linear-gradient(
+      117.1deg,
+      rgb(0, 2, 95) 11.4%,
+      rgb(0, 0, 0) 75.2%
+    );
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+  font-size: 12px;
+  bottom: 0;
+  width: 100%;
 }
 
-/* Estilo para las tablas */
-.tablas table {
-  cursor: pointer;
-  border-collapse: collapse;
-  text-align: left;
-  background-color: #333;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.social-icon {
+  color: #f7f6ee;
+}
+
+.social-icon-hover:hover {
+  color:#ffbb00;
+  transition: all 0.6s ease;
+}
+
+.map-frame {
+  height: 150px;
+}
+
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#video-bg {
+  opacity: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: cover; /* Escalar el video para cubrir el contenedor */
+}
+
+/* Estilos para el contenido encima del video */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/*--- JUGADORES ---*/
+.slider {
+  border-radius: 70px;
+  width: 80vw;
+  height: auto;
+  margin: auto;
   overflow: hidden;
 }
 
-.text-white {
+.slider .slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+  width: calc(600px * 14); /* Aumenta el ancho total para más espacio */
+  gap: 150px;
+}
+
+.slider .slide {
+  width: 280px; /* Aumenta el ancho de cada diapositiva */
+}
+
+.slider .slide img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-310px * 7)); /* Ajusta el valor de acuerdo al ancho de las diapositivas y el espacio entre ellas */
+    transform: translateX(calc(-310px * 7));
+  }
+}
+
+.slider2 {
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider2 .slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+  width: calc(600px * 14); /* Aumenta el ancho total para más espacio */
+}
+
+
+.slider2 .slide img {
+  height: 200px; /* Mantiene la proporción de la imagen */
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-310px * 7)); /* Ajusta el valor de acuerdo al ancho de las diapositivas y el espacio entre ellas */
+    transform: translateX(calc(-310px * 7));
+  }
+}
+
+
+.general {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 20px;
+
+}
+
+.general h2 {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 5px;
   font-size: 1em;
   font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
-/* Estilo para las celdas de cabecera */
 .tablas th {
   color: #ffffff;
-  background-color: #0202025d;
+  background-color: #020202;
   font-weight: bold;
   border: 1px solid rgb(65, 65, 65);
   padding: 8px;
@@ -292,17 +262,19 @@ a.nav-link:hover {
 
 /* Estilo para las filas pares */
 .tablas tr:nth-child(even) {
-  background-color: #0202025d;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 /* Estilo para las filas impares */
 .tablas tr:nth-child(odd) {
-  background-color: #333;
+  color: #ffffff;
+  background-color: #353535;
 }
 
 /* Estilo para las celdas */
 .tablas td {
-  border: 1px solid rgb(65, 65, 65);
+  border: 1px solid rgb(0, 0, 0);
   padding: 8px;
   text-align: center;
 }
@@ -318,12 +290,13 @@ a.nav-link:hover {
   color: #ffc400;
 }
 
+
 /* Estilos para el tablero realista */
 .container-hs {
   border-radius: 10px;
-  padding: 50px;
   text-align: center;
   color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 #headline {
@@ -338,6 +311,7 @@ a.nav-link:hover {
 }
 
 .countdown {
+  border: #ffbb00 1px solid;
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 5px;
   font-size: 20px;
@@ -348,7 +322,7 @@ a.nav-link:hover {
   padding: 10px;
   color: #ffbb00;
   text-shadow: 1px 1px 2px rgba(0, 60, 255, 0.87);
-  background-color: #000a5f67;
+  background-color: #000000b0;
 }
 
 .countdown div {
@@ -398,51 +372,35 @@ a.nav-link:hover {
   margin-top: 5px;
 }
 
-@media  screen and (max-width: 1023px){
+/* Estilos para dispositivos más pequeños */
+@media (max-width: 1024px) {
 
-  .navbar {
-  background-image: linear-gradient(112.1deg, rgb(0, 0, 0) 11.4%, rgb(0, 2, 95) 75.2%);
-  color: rgb(255, 255, 255);
-}
-
-  .sponsors-img{
-    max-width: 100%;
-    height: auto;
-}
-
-  /* Ajusta los estilos para pantallas más pequeñas aquí */
-  .tablas  {
+  .general {
     display: flex;
     flex-direction: column;
-    font-size: 12px; /* Reduce el tamaño del texto */
+    align-items: center;
   }
 
-  .card {
+  .bg-dark {
     text-align: center;
-    background-color: #22222448;
-    width: 100% !important; /* Agregamos !important */
-  }
-
-  .card img {
-    height: 1px;
-  }
-  
-  .card-title {
-    font-size: 0px !important; /* Agregamos !important */
-  }
-
-  .card-text {
-    font-size: 0px !important; /* Agregamos !important */
-  }
-
-  .card-button {
-    font-size: 14px !important; /* Agregamos !important */
+    font-size: 6%;
   }
 }
 
-
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
-.tablas {
-  flex-direction: column;
+/* Estilos para dispositivos más grandes */
+@media (min-width: 769px) {
+  .general {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .central {
+    width: 40%;
+    margin-right: 20px;
+  }
+  
+  .tablas {
+    width: 100%;
+    overflow-x: auto;
 }
 }
