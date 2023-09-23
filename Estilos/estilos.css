@@ -491,4 +491,64 @@ a.nav-link:hover {
 
 }
 
+@media screen and (max-width: 430px) {
+  /* Aquí puedes agregar tus estilos específicos para móviles */
+
+    body {
+      font-size: 6px; /* Cambia el tamaño de fuente para dispositivos móviles */
+      margin: 0;
+      padding: 0;
+    }
+
+    .social-icon,
+    .bg-dark p,
+    .bg-dark h4,
+    .general h2,
+    .tablas {
+      font-size: 6px; /* Reducir el tamaño de fuente para los elementos */
+    }
+ 
+  .card {
+      border: none;
+      align-items: center;
+      display: flex;
+      background-color: #00000000;
+      flex-direction: column;
+      box-shadow: none;
+  }
+
+  .card p,
+  .card-title {
+    display: none;
+  }
+
+  .card-img1,
+  .card-img2,
+  .card-img3{
+    background-image: none;
+}
+
+  .bg-dark {
+    text-align: center;
+  }
+
+  .social-icon-hover:hover {
+    color:#ffbb00;
+    transition: all 0.6s ease;
+  }
+  
+  .map-frame {
+    height: 80px;
+    width: 160px;
+    padding-bottom: 15px;
+  }
+
+  .general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
 
