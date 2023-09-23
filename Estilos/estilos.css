@@ -49,37 +49,92 @@ a.nav-link:hover {
   z-index: 7;
 }
 
+.carousel-item {
+  opacity: 90%;
+}
+
+
+.carousel-caption {
+  background-color: #0e135794;
+  font-family: 'Quicksand', sans-serif;
+  color: #faddcf;
+  letter-spacing: 5px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 
+  0px 4px 20px rgba(255, 225, 91, 0.493), /* Primera sombra exterior */
+  0px 4px 20px rgb(255, 255, 255); /* Segunda sombra exterior */
+}
+
+
+
+.carousel-item p{
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  display: block;
+  letter-spacing: 5px;
+  font-size: 1em;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  margin-left: 15px;
+}
+
+.tarjetas {
+  padding: 35px;
+}
+
 .card {
-  color: #ecbe00;
-  background-color: #252692c9;
+  font-family: 'Quicksand', sans-serif;
+  color: #faddcf;
+  letter-spacing: 5px;
+  font-size: 1em;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
   position: relative;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), box-shadow 0.3s ease, opacity 0.3s ease;
+  border-radius: 20px;
+  /* Aplicar sombras en gradiente */
+  box-shadow: 
+    0px 4px 20px rgba(255, 255, 255, 0.493), /* Primera sombra exterior */
+    0px 4px 20px rgb(255, 196, 87); /* Segunda sombra exterior */
 }
 
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.623));
-  z-index: -1;
-  transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-  transform: scaleX(0);
-  transform-origin: right;
-  opacity: 0.7;
+.card-img1 {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.349)), url('../Img/card4.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.card:hover::before {
-  transform: scaleX(1);
+.card-img2 {
+  background-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.349)), url('../Img/socio2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-img3 {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.349)), url('../Img/card5.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card:hover {
-  transform: scale(1.05);
+ 
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
   opacity: 0.9;
+  box-shadow: 
+  0px 4px 20px rgb(255, 166, 0), /* Primera sombra exterior */
+  0px 4px 20px rgb(0, 38, 255); /* Segunda sombra exterior */
+}
+
+.card-button {
+  border: 1px solid#ffffff9c;
+  box-shadow: 
+  0px 4px 20px rgb(255, 255, 255), /* Primera sombra exterior */
+  0px 4px 20px rgb(25, 0, 255); /* Segunda sombra exterior */
 }
 
 /* Estilos para los botones */
@@ -101,7 +156,7 @@ a.nav-link:hover {
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(80deg, transparent, #ffd9007c);
+  background: linear-gradient(80deg, transparent, #00000038);
   transition: width 4.0s ease;
 }
 
@@ -277,6 +332,9 @@ a.nav-link:hover {
   border: 1px solid rgb(0, 0, 0);
   padding: 8px;
   text-align: center;
+  box-shadow: 
+  0px 0px 2px rgb(255, 255, 255), /* Primera sombra exterior */
+  0px 4px 20px rgba(0, 0, 0, 0.938); /* Segunda sombra exterior */
 }
 
 /* Estilo para el hover en las filas */
@@ -311,7 +369,9 @@ a.nav-link:hover {
 }
 
 .countdown {
-  border: #ffbb00 1px solid;
+  box-shadow: 
+  0px 4px 20px rgb(255, 166, 0), /* Primera sombra exterior */
+  0px 4px 20px rgb(0, 38, 255); /* Segunda sombra exterior */
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 5px;
   font-size: 20px;
@@ -320,9 +380,8 @@ a.nav-link:hover {
   align-items: center;
   border-radius: 8px;
   padding: 10px;
-  color: #ffbb00;
-  text-shadow: 1px 1px 2px rgba(0, 60, 255, 0.87);
-  background-color: #000000b0;
+  color: #f5c557;
+  background-color: #0000007c;
 }
 
 .countdown div {
@@ -375,48 +434,43 @@ a.nav-link:hover {
 /* Estilos para dispositivos más pequeños */
 @media screen and (max-width: 768px) {
   /* Aquí puedes agregar tus estilos específicos para móviles */
-  body {
-    font-size: 8px; /* Cambia el tamaño de fuente para dispositivos móviles */
-  }
-  .card img {
-  display: none;
-  }
 
-  .card p{
-    display:none;
-  }
-  #tarjetas {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
+    body {
+      font-size: 8px; /* Cambia el tamaño de fuente para dispositivos móviles */
+      margin: 0;
+      padding: 0;
+    }
+
+    .social-icon,
+    .bg-dark p,
+    .bg-dark h4,
+    .general h2,
+    .tablas {
+      font-size: 8px; /* Reducir el tamaño de fuente para los elementos */
+    }
+ 
   .card {
+      border: none;
       align-items: center;
       display: flex;
       background-color: #00000000;
       flex-direction: column;
+      box-shadow: none;
   }
-  
+
+  .card p,
   .card-title {
     display: none;
   }
 
-  .mt-5{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  .card-img1,
+  .card-img2,
+  .card-img3{
+    background-image: none;
+}
 
-  .social-icon {
-    color: #f7f6ee;
-  }
-  
   .bg-dark {
     text-align: center;
-  }
-
-  .copyright {
-    font-size: 3px;
   }
 
   .social-icon-hover:hover {
@@ -430,27 +484,11 @@ a.nav-link:hover {
     padding-bottom: 15px;
   }
 
-  .bg-dark p{
-    font-size: 8px;
-  }
-
-  .bg-dark h4 {
-    font-size: 18px;
-  }
-
-  .general h2 {
-    font-size: 18px; /* Cambia el tamaño de fuente para títulos en dispositivos móviles */
-  }
-
   .general {
     display: flex;
     flex-direction: column;
   }
 
-  .tablas {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
-/* Estilos para dispositivos más grandes */
+
