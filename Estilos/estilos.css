@@ -378,6 +378,35 @@ a.nav-link:hover {
   body {
     font-size: 8px; /* Cambia el tamaño de fuente para dispositivos móviles */
   }
+  .card img {
+  display: none;
+  }
+
+  .card p{
+    display:none;
+  }
+  #tarjetas {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+      align-items: center;
+      display: flex;
+      background-color: #00000000;
+      flex-direction: column;
+  }
+  
+  .card-title {
+    display: none;
+  }
+
+  .mt-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .social-icon {
     color: #f7f6ee;
   }
@@ -425,19 +454,3 @@ a.nav-link:hover {
 }
 
 /* Estilos para dispositivos más grandes */
-@media (min-width: 769px) {
-  .general {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .central {
-    width: 40%;
-    margin-right: 20px;
-  }
-  
-  .tablas {
-    width: 100%;
-    overflow-x: auto;
-}
-}
