@@ -451,7 +451,7 @@ a.nav-link:hover {
 }
 
 /* Estilos para dispositivos más pequeños */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   /* Aquí puedes agregar tus estilos específicos para móviles */
 
     body {
@@ -573,5 +573,3 @@ a.nav-link:hover {
   }
 
 }
-
-
