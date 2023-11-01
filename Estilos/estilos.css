@@ -450,191 +450,6 @@ a.nav-link:hover {
   margin-top: 5px;
 }
 
-/* Estilos para dispositivos más pequeños */
-@media screen and (max-width: 991px) {
-  /* Aquí puedes agregar tus estilos específicos para móviles */
-
-    body {
-      font-size: 8px; /* Cambia el tamaño de fuente para dispositivos móviles */
-      margin: 0;
-      padding: 0;
-    }
-
-    .social-icon,
-    .bg-dark p,
-    .bg-dark h4,
-    .general h2,
-    .tablas {
-      font-size: 8px; /* Reducir el tamaño de fuente para los elementos */
-    }
- 
-  .card {
-      border: none;
-      align-items: center;
-      display: flex;
-      background-color: #00000000;
-      flex-direction: column;
-      box-shadow: none;
-  }
-
-  .card p,
-  .card-title {
-    display: none;
-  }
-
-  .card-img1,
-  .card-img2,
-  .card-img3{
-    background-image: none;
-}
-
-  .bg-dark {
-    text-align: center;
-  }
-
-  .social-icon-hover:hover {
-    color:#ffbb00;
-    transition: all 0.6s ease;
-  }
-  
-  .map-frame {
-    height: 80px;
-    width: 160px;
-    padding-bottom: 15px;
-  }
-
-  .general {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .slider {
-    width: 100vw;
-  }
-
-}
-
-@media screen and (max-width: 430px) {
-  /* Aquí puedes agregar tus estilos específicos para móviles */
-
-    body {
-      font-size: 6px; /* Cambia el tamaño de fuente para dispositivos móviles */
-      margin: 0;
-      padding: 0;
-    }
-
-    .social-icon,
-    .bg-dark p,
-    .bg-dark h4,
-    .general h2,
-    .tablas {
-      font-size: 6px; /* Reducir el tamaño de fuente para los elementos */
-    }
- 
-  .card {
-      border: none;
-      align-items: center;
-      display: flex;
-      background-color: #00000000;
-      flex-direction: column;
-      box-shadow: none;
-  }
-
-  .card p,
-  .card-title {
-    display: none;
-  }
-
-  .card-img1,
-  .card-img2,
-  .card-img3{
-    background-image: none;
-}
-
-  .bg-dark {
-    text-align: center;
-  }
-
-  .social-icon-hover:hover {
-    color:#ffbb00;
-    transition: all 0.6s ease;
-  }
-  
-  .map-frame {
-    height: 80px;
-    width: 160px;
-    padding-bottom: 15px;
-  }
-
-  .general {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .mid2 {
   display: flex;
@@ -777,41 +592,6 @@ table {
   color: #ffbb00;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .tabla-entradas {
   font-family: 'Quicksand', sans-serif;
   border-radius: 20px;
@@ -846,18 +626,6 @@ table {
   color: #ffbb00;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Estilos para el modal */
 .modal {
@@ -902,3 +670,167 @@ table {
   color: #000;
 }
 
+/* Estilos para dispositivos más pequeños */
+@media screen and (max-width: 991px) {
+  /* Aquí puedes agregar tus estilos específicos para móviles */
+
+    body {
+      font-size: 8px; /* Cambia el tamaño de fuente para dispositivos móviles */
+      margin: 0;
+      padding: 0;
+    }
+
+    .social-icon,
+    .bg-dark p,
+    .bg-dark h4,
+    .general h2,
+    .tablas {
+      font-size: 8px; /* Reducir el tamaño de fuente para los elementos */
+    }
+ 
+  .card {
+      border: none;
+      align-items: center;
+      display: flex;
+      background-color: #00000000;
+      flex-direction: column;
+      box-shadow: none;
+  }
+
+  .card p,
+  .card-title {
+    display: none;
+  }
+
+  .card-img1,
+  .card-img2,
+  .card-img3{
+    background-image: none;
+}
+
+  .bg-dark {
+    text-align: center;
+  }
+
+  .social-icon-hover:hover {
+    color:#ffbb00;
+    transition: all 0.6s ease;
+  }
+  
+  .map-frame {
+    height: 80px;
+    width: 160px;
+    padding-bottom: 15px;
+  }
+
+  .general {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider {
+    width: 100vw;
+  }
+
+  .mid2 {
+    flex-direction: column; /* Cambiar la dirección de los elementos en dispositivos más pequeños */
+    align-items: center;
+  }
+
+  .form-container {
+    margin: 0; /* Eliminar el margen en dispositivos más pequeños */
+    padding: 10px; /* Reducir el espacio entre los elementos */
+    border-radius: 0; /* Eliminar el redondeo del borde */
+    
+  }
+
+  .tabla-entradas {
+    text-align: center;
+    max-width: 100%; /* Establecer el ancho máximo al 100% del contenedor */
+    
+  }
+
+
+}
+
+@media screen and (max-width: 430px) {
+  /* Aquí puedes agregar tus estilos específicos para móviles */
+
+    body {
+      font-size: 6px; /* Cambia el tamaño de fuente para dispositivos móviles */
+      margin: 0;
+      padding: 0;
+    }
+
+    .social-icon,
+    .bg-dark p,
+    .bg-dark h4,
+    .general h2,
+    .tablas {
+      font-size: 6px; /* Reducir el tamaño de fuente para los elementos */
+    }
+ 
+  .card {
+      border: none;
+      align-items: center;
+      display: flex;
+      background-color: #00000000;
+      flex-direction: column;
+      box-shadow: none;
+  }
+
+  .card p,
+  .card-title {
+    display: none;
+  }
+
+  .card-img1,
+  .card-img2,
+  .card-img3{
+    background-image: none;
+}
+
+  .bg-dark {
+    text-align: center;
+  }
+
+  .social-icon-hover:hover {
+    color:#ffbb00;
+    transition: all 0.6s ease;
+  }
+  
+  .map-frame {
+    height: 80px;
+    width: 160px;
+    padding-bottom: 15px;
+  }
+
+  .general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .mid2 {
+    flex-direction: column; /* Cambiar la dirección de los elementos en dispositivos más pequeños */
+  }
+
+  .form-container {
+    margin: 0; /* Eliminar el margen en dispositivos más pequeños */
+    padding: 10px; /* Reducir el espacio entre los elementos */
+    border-radius: 0; /* Eliminar el redondeo del borde */
+  }
+
+  .tabla-entradas {
+    text-align: center;
+    max-width: 100%; /* Establecer el ancho máximo al 100% del contenedor */
+    
+  }
+
+
+
+
+
+
+}
