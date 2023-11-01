@@ -532,7 +532,7 @@ select:focus {
   margin-top: 20px;
 }
 
-button {
+.form-buttons button {
   padding: 10px 20px;
   background-color: #120fa8;
   color: rgb(255, 187, 0);
@@ -546,7 +546,7 @@ button {
   0px 4px 20px rgb(25, 0, 255); /* Segunda sombra exterior */
 }
 
-button:hover {
+.form-buttons button:hover {
   color: rgb(255, 255, 255);
   background-color: #000000a4;
   box-shadow: 
