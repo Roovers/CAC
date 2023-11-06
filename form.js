@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var cerrarModal = document.getElementById('cerrar-modal');
     var modalCompraVacia = document.getElementById('modal-compra-vacia');
     var cerrarModalCompraVacia = document.getElementById('cerrar-modal-compra-vacia');
-    var tablaDatos = document.getElementById('ticket-list-body'); // Cambia 'tablaDatos' al ID correcto de tu tabla
+    var tablaDatos = document.getElementById('ticket-list-body'); // Cambia 'tablaDatos' al ID correcto de la tabla
   
     // Función para mostrar el modal
     function mostrarModal(modal) {
